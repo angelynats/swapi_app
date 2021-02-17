@@ -1,4 +1,5 @@
 # swapi_app
-Запуск проекта:
-npm install
-npm start
+
+#To start:
+#npm install
+#npm start
