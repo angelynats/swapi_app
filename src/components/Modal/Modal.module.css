@@ -1,0 +1,61 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 380px;
+  max-width: 90%;
+  height: 320px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 16px;
+  padding-top: 38px;
+}
+
+.button {
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  box-sizing: content-box;
+  background-color: transparent;
+  will-change: transform;
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.svg_close {
+  color: #000;
+  vertical-align: middle;
+  transform: scale(1.9);
+}
+
+.button:hover,
+.button:focus {
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transform: scale(1.1);
+  outline: none;
+}
